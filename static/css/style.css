@@ -1,0 +1,52 @@
+body {
+    background-image: url('home.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+.ft{
+  border-radius: 25px;
+    width: 70%;
+    margin-left: 15%;
+    border: 3px solid blue;
+    background-color: rgb(208, 205, 248);
+}
+.ft1{
+  border-radius: 25px;
+  width: 60%;
+  margin-top: 100px ;
+  margin-left: 20%;
+  border: 3px solid blue;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  background-color: rgb(208, 205, 248);
+}
+.button1{
+  opacity: 1;
+  border: 3px solid blue;
+  margin-top: 300px ;
+  margin-left: 30%;
+  border-radius: 25px;
+  width: 40%;
+  height: 30%;
+  background-color: rgb(208, 205, 248);
+}
+.button2{
+  opacity: 1;
+  border: 3px solid blue;
+  margin-top: 40px ;
+  margin-left: 30%;
+  margin-bottom: 40px ;
+  border-radius: 25px;
+  width: 40%;
+  height: 10%;
+  background-color: rgb(208, 205, 248);
+}
+.bu{
+  border: 3px solid blue;
+  width: 90%;
+  height: 20%;
+  border-radius: 25px;
+  background-color: rgb(208, 205, 248);
+}

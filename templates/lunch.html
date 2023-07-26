@@ -1,0 +1,128 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>SELF_SERVICE_RESTAURANT_KIOSK</title>
+    <style>
+      .button5{
+            opacity: 1;
+  border: 3px solid blue;
+  margin-top: 30px ;
+  border-radius: 25px;
+  width: 200px;
+  height: 10%;
+  background-color: rgb(208, 205, 248);}
+        table, td {
+  border:"0";
+  border-collapse: collapse;
+
+}
+select {
+  appearance: none;
+  background-color: transparent;
+  border: 3px solid blue;;
+  width: 80%;
+
+  -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+  padding-top: 2% ;
+  padding-left : 20%;
+  height: 50%;
+  border-radius: 25px;
+  background-color: rgb(208, 205, 248);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  z-index: 1;
+  outline: none;
+}
+.button6{
+            opacity: 1;
+  border: 3px solid blue;
+  margin-top: 30px ;
+  border-radius: 25px;
+  width: 50%;
+  height: 80%;
+  background-color: rgb(208, 205, 248);}
+        table, td {
+  border:"0";
+  border-collapse: collapse;
+}
+tr{
+    border-top: 1px solid black;
+}
+table{
+    text-align: center;
+}
+.editbtn{
+  border: 3px solid blue;
+  margin-top: 40px ;
+  margin-bottom: 40px ;
+  width: 60%;
+  border-radius: 25px;
+  padding: 2%;
+  background-color: rgb(208, 205, 248);
+}
+a{
+            width: 40%;
+        }
+        a:link, a:visited {
+            background-color: rgb(208, 205, 248);
+            border: 3px solid blue;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 25px;
+  padding-right: 30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a:hover, a:active {
+  background-color: rgb(208, 205, 248);
+  opacity: 0.5;
+}
+select option { padding:5px 0px; }
+
+    </style>
+</head>
+<body>
+    <br>
+    <div align="center" >
+      <ul>
+        <li><a href="/cart">Back to Cart</a><a href="/menu">Back to Main Menu</a></li>
+      </ul>
+    </div>
+    <br>
+    <div class="ft">
+        <h3 align="center">Lunch Menu</h3>  
+<form name="bf" action="/addcart" method="POST" align="center">
+  <div>
+    <select name="bfitem" multiple>
+      <option value="SELECT LUNCH ITEM ">SELECT LUNCH ITEM </option> 
+      <br>
+        {% for row in rows %} 
+        <option value=({{row[0]}},{{row[1]}})>{{row[0]}} - {{row[1]}} </option> 
+        <br><br>
+      {% endfor %} 
+      </select>
+    </div>
+      <div class="d">
+        <input class="button5" type = "submit" value="Add to Cart">
+    </div>
+</form>
+
+
+    <br>
+</div>
+<br><br>
+</body>
+</html>

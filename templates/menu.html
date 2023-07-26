@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/css/style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SELF_SERVICE_RESTAURANT_KIOSK</title>
+        <style>
+          a:link, a:visited {
+            background-color: rgb(208, 205, 248);
+            border: 3px solid blue;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 25px;
+  padding-right: 30px;
+}
+
+a:hover, a:active {
+  background-color: rgb(208, 205, 248);
+  opacity: 0.5;
+}
+          ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Float four columns side by side */
+        .column {
+          float: left;
+          width: 25%;
+          padding: 0 10px;
+        }
+        
+        /* Remove extra left and right margins, due to padding */
+        .row {margin: 0 -5px;}
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+          }
+        }
+        
+        /* Style the counter cards */
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          border-radius: 25px;
+          border: 3px solid blue;
+          padding: 16px;
+          text-align: center;
+          background-color: rgb(208, 205, 248);
+          height: 70%;
+        }
+        </style>
+        </head>
+        <body>
+            <br>
+          <div>
+            <ul>
+              <li><a href="/cart">cart</a></li>
+            </ul>
+          </div>
+        <h3 align="center"> {% if done1 %} done1 {% endif %}</h3>
+          <br>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+                <br><br><br><br>
+              <h1>BREAKFAST</h1>
+              <br><br><br><br>
+              <form>
+              <input class="bu" type="submit" formaction="/bf" value="click me see Breakfast items">
+            </form>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="column">
+              <div class="card">
+                  <br><br><br><br>
+                <h1>LUNCH</h1>
+                <br><br><br><br>
+                <form>
+                <input class="bu" type="submit" formaction="/lunch" value="click me see Lunch items">
+              </form>
+              </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                  <div class="card">
+                      <br><br><br><br>
+                    <h1>EVENING</h1>
+                    <br><br><br><br>
+                    <form>
+                    <input class="bu" type="submit" formaction="/evening" value="click me see Evening items">
+                  </form>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                          <br><br><br><br>
+                        <h1>DINNER</h1>
+                        <br><br><br><br>
+                        <form>
+                        <input class="bu" type="submit" formaction="/dinner" value="click me see Dinner items">
+                      </form>
+                      </div>
+                    </div>
+          
+          
+        </div>
+        
+</body>
+</html>
+

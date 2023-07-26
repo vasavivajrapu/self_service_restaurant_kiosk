@@ -1,0 +1,80 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>SELF_SERVICE_RESTAURANT_KIOSK</title>
+    <style>
+        table, td {
+  border:"0";
+  border-collapse: collapse;
+}
+tr{
+    border-top: 1px solid black;
+}
+table{
+    text-align: center;
+}
+.editbtn{
+  border: 3px solid blue;
+  margin-top: 40px ;
+  margin-bottom: 40px ;
+  width: 60%;
+  border-radius: 25px;
+  padding: 2%;
+  background-color: rgb(208, 205, 248);
+}
+a{
+            width: 40%;
+        }
+        a:link, a:visited {
+            background-color: rgb(208, 205, 248);
+            border: 3px solid blue;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 25px;
+  padding-right: 30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a:hover, a:active {
+  background-color: rgb(208, 205, 248);
+  opacity: 0.5;
+}
+    </style>
+</head>
+<body align="center">
+    <div class="ft">
+    <h3>Payment Done </h3>
+
+    <p> Your Order Id : {%if x %} {{x}} {% endif %}</p>
+        <p>{% if det %}
+            NAME : {{det[0][0]}}
+            <br>
+            PHONE NUMBER : {{det[0][1]}}
+            {% endif %}
+        </p>
+        <br>
+        <br>
+        <p>{% if sum %}
+            Paid Amount : {{sum}} Rs
+            {% endif %}
+        </p>
+    <br>
+    <br>
+    <div>
+      <ul>
+        <li><a href="/front">Done</a></li>
+      </ul>
+    </div>
+</div>
+<br><br>
+</body>
+</html>

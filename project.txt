@@ -1,0 +1,18 @@
+SELF_SERVICE_RESTAURANT_KIOSK 
+
+VIRTUAL ENVIRONMENT CREATION :
+1. Create a folder (PROJECT On desktop which will consists of env and project)
+2. Open terminal - python -m venv env (env is the environment created in folder)
+3. Activate the env - so ,now go to the project  directory and execute - source env/bin/activate
+
+Installation :
+Pip install flask
+
+Admin login : username = admin
+			password = admin123
+
+
+execution :
+run - main.py file 
+
+
